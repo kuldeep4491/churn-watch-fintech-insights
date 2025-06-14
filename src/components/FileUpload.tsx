@@ -76,10 +76,10 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
           <p>Expected columns: customer_id, features like tenure, monthly_charges, etc.</p>
         </div>
 
-        <div className="flex items-center gap-1 text-xs text-slate-600 mt-4">
+        <div className="flex items-center gap-1 text-sm text-slate-300 mt-4 font-medium">
           <span>Made with</span>
-          <Heart className="h-3 w-3 text-red-400 fill-current" />
-          <span>kuldeep pandey</span>
+          <Heart className="h-4 w-4 text-red-400 fill-current" />
+          <span className="text-white font-semibold">kuldeep pandey</span>
         </div>
       </div>
     </div>
