@@ -2,7 +2,7 @@
 import React, { useCallback } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Upload, FileText } from "lucide-react";
+import { Upload, FileText, Heart } from "lucide-react";
 
 interface FileUploadProps {
   onFileUpload: (file: File) => void;
@@ -74,6 +74,12 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
         <div className="text-xs text-slate-500 space-y-1">
           <p>Supported format: CSV files</p>
           <p>Expected columns: customer_id, features like tenure, monthly_charges, etc.</p>
+        </div>
+
+        <div className="flex items-center gap-1 text-xs text-slate-600 mt-4">
+          <span>Made with</span>
+          <Heart className="h-3 w-3 text-red-400 fill-current" />
+          <span>kuldeep pandey</span>
         </div>
       </div>
     </div>
